@@ -1,0 +1,85 @@
+.slider {
+  position: relative;
+  min-width: 0;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider .slick-track {
+/*   //pentru slider vertical
+display: block; */
+}
+/* Слайдер */
+.slick-slider {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Стрелка */
+.clients-slider1 .slick-arrow {
+  font-size: 0;
+  border: 0;
+  width: 50px;
+  height: 100px;
+
+  position: absolute;
+    z-index: 10;
+  top: calc(50% - 50px);
+}
+
+/* Стрелка влево */
+.clients-slider1 .slick-arrow.slick-prev {
+  background: url("../img/arrow_left.png") no-repeat center;
+  left: 2%;
+}
+
+/* Стрелка вправо */
+.clients-slider1 .slick-arrow.slick-next {
+  background: url("../img/arrow_right.png") no-repeat center;
+  right: 2%;
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+  opacity: .6;
+}
+
+/* Точки (булиты) */
+.slick-dots {
+  position: absolute;
+  bottom: 4%;
+  left: calc(50% - 57px);
+}
+
+.slick-dots li {
+  font-size: 0;
+  display: inline-block;
+
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button{
+background-color: var(--color-green);
+border: 0;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  height: 23px;
+  width: 23px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  padding: 0;
+}
